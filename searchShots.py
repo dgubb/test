@@ -9,12 +9,7 @@ def process_file(file):
       print( file,data[2,0])
 
 
-input_len=len(sys.argv)
-if input_len !=2:
-   print('incorrect number of inputs')
-   sys.exit(1)
+for file in sys.argv[1:]:
+   process_file(file)
 
-file = sys.argv[1]
-
-process_file(file)
 
