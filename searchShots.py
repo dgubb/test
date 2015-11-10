@@ -10,6 +10,9 @@ def process_file(file):
 
 
 for file in sys.argv[1:]:
-   process_file(file)
+   try:
+      process_file(file)
+   except:
+      print("bad input file")
 
 
