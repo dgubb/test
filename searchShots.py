@@ -4,6 +4,6 @@ import numpy
 import sys
 import search_shot
 
-search_shot.process_file(sys.argv[1])
+print (search_shot.process_file(sys.argv[1]))
 
 
